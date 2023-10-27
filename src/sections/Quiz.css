@@ -1,57 +1,85 @@
-.start-button{
+.start-button {
     margin: 10px 0;
     cursor: pointer;
     padding: 10px;
     border: 2px solid darkcyan;
     border-radius: 5px;
     transition: background-color 0.2s, color 0.2s;
-}
-
-.start-button:hover{
+    display: inline-block; /* Display start button inline */
+  }
+  
+  .start-button:hover {
     background-color: darkcyan;
     color: #fff;
-}
-
-.question {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.options {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.quiz-item {
-  margin: 10px 0;
-  cursor: pointer;
-  padding: 10px;
-  border: 2px solid darkcyan;
-  border-radius: 5px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.quiz-item:hover {
-  background-color: darkcyan;
-  color: #fff;
-}
-
-.score {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-.completed {
-  color: #007BFF;
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
   }
-}
+  
+  .question {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quiz-item {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .quiz-item:hover {
+    background-color: darkcyan;
+    color: #fff;
+  }
+  
+  .score {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .completed {
+    color: #007BFF;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  /* Table styles for the performance report */
+  .answers {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .answers th, .answers td {
+    border: 2px solid darkcyan;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .answers th {
+    background-color: darkcyan;
+    color: #fff;
+  }
+  
+  .correct-answer {
+    background-color: #dff0d8;
+  }
+  
+  .wrong-answer {
+    background-color: #f8d7da;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  

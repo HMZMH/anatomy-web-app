@@ -104,7 +104,7 @@ class Quiz extends Component {
           <div>
             <h3>Quiz</h3>
             <button className="start-button" onClick={this.startQuiz}>
-              Start
+              Start Quiz
             </button>
           </div>
         ) : !quizCompleted ? (
@@ -128,17 +128,26 @@ class Quiz extends Component {
                 Time Taken: {((endTime - startTime) / 1000).toFixed(2)} seconds
               </p>
             )}
-            <div className="answers">
-              {answers.map((answer, index) => (
-                <div key={index} className={answer.correct ? 'correct-answer' : 'wrong-answer'}>
-                  <p>{answer.question}</p>
-                  <p>Your Answer: {answer.selected}</p>
-                  <p>Correct Answer: {questions[index].correctAnswer}</p>
-                </div>
-              ))}
-            </div>
+            <table className="answers">
+              <thead>
+                <tr>
+                  <th>Question</th>
+                  <th>Your Answer</th>
+                  <th>Correct Answer</th>
+                </tr>
+              </thead>
+              <tbody>
+                {answers.map((answer, index) => (
+                  <tr key={index} className={answer.correct ? 'correct-answer' : 'wrong-answer'}>
+                    <td>{answer.question}</td>
+                    <td>{answer.selected}</td>
+                    <td>{questions[index].correctAnswer}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
             <button className="start-button" onClick={this.restartQuiz}>
-              Restart
+              Restart Quiz
             </button>
           </div>
         )}
