@@ -3,6 +3,10 @@ body{
   width: 100vw;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .app {
   text-align: start;
   background-image: linear-gradient(to top left, silver, white);
@@ -25,15 +29,17 @@ h1{
 
 .row{
   height: 75vh;
-  margin-top: 4vh !important;
+  margin-top: 5vh !important;
 }
 
 #content{
   padding: 25px;
-  background-image: linear-gradient(to top left, white, silver);
+  background-image: linear-gradient(to bottom, white, silver);
   border-radius: 9px/8px;
   border: 1px darkcyan solid;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 75vh;
 }
 
 #menu{

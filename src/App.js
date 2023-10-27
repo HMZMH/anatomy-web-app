@@ -12,6 +12,7 @@ import Section7 from './sections/Section7';
 import Section8 from './sections/Section8';
 import Section9 from './sections/Section9';
 import Section10 from './sections/Section10';
+import Quiz from './sections/Quiz';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           {currentContent === 8 && <Section8 />}
           {currentContent === 9 && <Section9 />}
           {currentContent === 10 && <Section10 />}
+          {currentContent === 11 && <Quiz />}
         </div>
 
         <div className='col-md-2' id='menu'>
@@ -57,6 +59,7 @@ function App() {
             <li className='menu-item' onClick={() => handleMenuClick(8)}>Digestive System</li>
             <li className='menu-item' onClick={() => handleMenuClick(9)}>Urinary System</li>
             <li className='menu-item' onClick={() => handleMenuClick(10)}>Reproductive System</li>
+            <li className='menu-item' onClick={() => handleMenuClick(11)}>Quiz</li>
           </ul>
         </div>
 
