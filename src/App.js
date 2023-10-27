@@ -31,9 +31,7 @@ function App() {
 
       <div className='row' id='row'>
 
-        <div className='col-md-1'></div>
-
-        <div className='col-md-9' id='content'>
+        <div className='col-md-10' id='content'>
           {currentContent === 1 && <Section1 />}
           {currentContent === 2 && <Section2 />}
           {currentContent === 3 && <Section3 />}

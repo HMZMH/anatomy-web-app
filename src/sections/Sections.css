@@ -8,17 +8,22 @@ h3{
 }
 
 #quiz-menu{
-    text-align: center;
     color: grey;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+    height: 35px;
+    border: solid 1px darkcyan;
+    box-shadow: inset 25px 0 10px -10px rgba(0, 139, 139, 0.10), inset -25px 0 10px -10px rgba(0, 139, 139, 0.10);
 }
 
 .quiz-menu-item{
     display: inline-block;
     list-style: none;
     font-size: large;
-    margin: 5px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 2.5px;
+    margin-right: 50px;
   }
   
   .quiz-menu-item:hover{

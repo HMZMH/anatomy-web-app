@@ -91,7 +91,7 @@ class Section2Quiz extends Component {
     return (
       <div className="container">
         {!quizStarted ? (
-          <div>
+          <div className='quiz-start'>
             <h3>Muscular System Quiz</h3>
             <button className="start-button" onClick={this.startQuiz}>
               Start Quiz

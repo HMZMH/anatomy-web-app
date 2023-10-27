@@ -30,6 +30,8 @@ h1{
 .row{
   height: 75vh;
   margin-top: 5vh !important;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 #content{
@@ -45,12 +47,17 @@ h1{
 #menu{
   text-align: end;
   color: grey;
+  border-radius: 9px/8px;
+  border-top: solid 1px darkcyan;
+  border-right: solid 1px darkcyan;
+  border-image: linear-gradient(to left, darkcyan 50%, transparent 75%) 1;
 }
 
 .menu-item{
   list-style: none;
   font-size: large;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .menu-item:hover{
