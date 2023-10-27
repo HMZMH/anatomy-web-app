@@ -50,10 +50,12 @@ h1{
 .menu-item{
   list-style: none;
   font-size: large;
+  margin-bottom: 5px;
 }
 
 .menu-item:hover{
   color: darkcyan;
-  font-size: x-large;
+  transform: scale(1.25);
+  transform-origin: right center;
   cursor: pointer;
 }

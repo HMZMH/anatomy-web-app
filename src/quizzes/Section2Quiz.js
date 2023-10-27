@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Quiz.css'; // Import the stylesheet
 
-class Quiz extends Component {
+class Section2Quiz extends Component {
   constructor(props) {
     super(props);
 
@@ -15,39 +15,29 @@ class Quiz extends Component {
       answers: [],
       questions: [
         {
-          question: "What makes up the human skeletal system?",
-          options: ["Bones", "Muscles", "Skin", "Ligaments"],
-          correctAnswer: "Bones",
+          question: "What is the primary function of muscle fibers in the muscular system?",
+          options: ["Contractions", "Storing energy", "Blood circulation", "Protecting organs"],
+          correctAnswer: "Contractions",
         },
         {
-          question: "How much of the body's weight does the skeletal system account for?",
-          options: ["10%", "20%", "30%", "40%"],
-          correctAnswer: "20%",
+          question: "What is responsible for nearly all movement in the body?",
+          options: ["Skeletal muscles", "Bones", "Tendons", "Joints"],
+          correctAnswer: "Skeletal muscles",
         },
         {
-          question: "What is the function of bones in the skeletal system?",
-          options: ["To store oxygen", "To protect soft organs", "To generate electricity", "To produce hormones"],
-          correctAnswer: "To protect soft organs",
+          question: "Apart from obvious movements like walking and running, what other movements do skeletal muscles produce?",
+          options: ["Facial expressions", "Digestion", "Heartbeat", "Breathing"],
+          correctAnswer: "Facial expressions",
         },
         {
-          question: "What do bones work with as lever systems for body movement?",
-          options: ["Blood vessels", "Nerves", "Muscles", "Skin"],
-          correctAnswer: "Muscles",
+          question: "How do muscles contribute to maintaining posture?",
+          options: ["By storing heat", "By expanding and contracting", "By making fine adjustments", "By cushioning organs"],
+          correctAnswer: "By making fine adjustments",
         },
         {
-          question: "Where does hematopoiesis primarily occur?",
-          options: ["In the brain", "In the liver", "In the red marrow of bones", "In the lungs"],
-          correctAnswer: "In the red marrow of bones",
-        },
-        {
-          question: "What is the primary function of the red marrow in bones?",
-          options: ["To store fat", "To produce hormones", "To generate electricity", "Hematopoiesis"],
-          correctAnswer: "Hematopoiesis",
-        },
-        {
-          question: "Which component of the skeletal system provides a rigid framework for the body?",
-          options: ["Cartilage", "Muscles", "Ligaments", "Skeleton"],
-          correctAnswer: "Skeleton",
+          question: "What is an important by-product of muscle metabolism?",
+          options: ["Energy production", "Blood circulation", "Heat production", "Growth of bones"],
+          correctAnswer: "Heat production",
         },
       ],
     };
@@ -102,7 +92,7 @@ class Quiz extends Component {
       <div className="container">
         {!quizStarted ? (
           <div>
-            <h3>Quiz</h3>
+            <h3>Muscular System Quiz</h3>
             <button className="start-button" onClick={this.startQuiz}>
               Start Quiz
             </button>
@@ -110,6 +100,7 @@ class Quiz extends Component {
         ) : !quizCompleted ? (
           <div>
             <p className="question">Question {currentQuestion + 1} of {questions.length}:</p>
+            <br/>
             <p>{questions[currentQuestion].question}</p>
             <ul className="options">
               {questions[currentQuestion].options.map((option, index) => (
@@ -156,4 +147,4 @@ class Quiz extends Component {
   }
 }
 
-export default Quiz;
+export default Section2Quiz;

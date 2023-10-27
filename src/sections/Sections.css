@@ -6,3 +6,24 @@
 h3{
     color: darkcyan;
 }
+
+#quiz-menu{
+    text-align: center;
+    color: grey;
+}
+
+.quiz-menu-item{
+    display: inline-block;
+    list-style: none;
+    font-size: large;
+    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .quiz-menu-item:hover{
+    color: darkcyan;
+    transform: scale(1.25);
+    transform-origin: center;
+    cursor: pointer;
+  }
