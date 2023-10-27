@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Sections.css';
 import Section1Quiz from '../quizzes/Section1Quiz';
 import Section2Quiz from '../quizzes/Section2Quiz';
+import Section3Quiz from '../quizzes/Section3Quiz';
 
 function QuizSection() {
 
@@ -35,6 +36,7 @@ function QuizSection() {
         <div>
           {currentContent === 1 && <Section1Quiz />}
           {currentContent === 2 && <Section2Quiz />}
+          {currentContent === 3 && <Section3Quiz />}
         </div>
 
     </div>

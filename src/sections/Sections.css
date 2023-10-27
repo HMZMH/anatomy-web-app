@@ -13,7 +13,8 @@ h3{
     overflow-y: hidden;
     white-space:nowrap;
     height: 35px;
-    border: solid 1px darkcyan;
+    border-left: solid 1px darkcyan;
+    border-right: solid 1px darkcyan;
     box-shadow: inset 25px 0 10px -10px rgba(0, 139, 139, 0.10), inset -25px 0 10px -10px rgba(0, 139, 139, 0.10);
 }
 
