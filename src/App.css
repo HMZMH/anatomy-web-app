@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body{
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  text-align: start;
+  background-image: linear-gradient(to top left, silver, white);
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100vh;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  display: inline;
+  font-style: italic;
+  font-size: 50px !important;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row{
+  height: 75vh;
+  margin-top: 4vh !important;
 }
 
-.App-link {
-  color: #61dafb;
+#content{
+  padding: 25px;
+  background-image: linear-gradient(to top left, white, silver);
+  border-radius: 9px/8px;
+  border: 1px darkcyan solid;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#menu{
+  text-align: end;
+  color: darkgrey;
+}
+
+.menu-item{
+  list-style: none;
+  font-size: large;
+}
+
+.menu-item:hover{
+  color: darkcyan;
+  font-size: x-large;
+  cursor: pointer;
 }
