@@ -10,13 +10,14 @@ body{
 .app {
   text-align: start;
   background-image: linear-gradient(to top left, lightcyan, white);
+  background-repeat: repeat;
+  background-attachment: fixed;
   padding-left: 2.5%;
   padding-right: 2.5%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-  font-family: 'Times New Roman', Times, serif;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 h1{
@@ -51,11 +52,11 @@ h1{
   border-top: solid 1px darkcyan;
   border-right: solid 1px darkcyan;
   border-image: linear-gradient(to left, darkcyan 50%, transparent 75%) 1;
+  min-width: 220px;
 }
 
 .menu-item{
   list-style: none;
-  font-size: large;
   margin-top: 10px;
   margin-bottom: 10px;
 }
