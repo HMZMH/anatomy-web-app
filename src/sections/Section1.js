@@ -1,4 +1,6 @@
 import './Sections.css';
+import vertebral_column from '../assets/vertebral_column.png';
+import knee_anatomy from '../assets/knee_anatomy.jpg';
 
 function Section1 () {
     
@@ -8,7 +10,9 @@ function Section1 () {
 
             <ul>
                 <li>Humans are vertebrates with a vertebral column.</li>
+                <img className='section-images' src={vertebral_column} alt='vertebral column'/>
                 <li>The human skeletal system includes bones, cartilage, ligaments, and tendons, accounting for about 20% of body weight.</li>
+                <img className='section-images' src={knee_anatomy} alt='knee anatomy'/>
                 <li>Bones are living tissues that use oxygen, release waste products, and can change shape in response to mechanical stress.</li>
                 <li>The skeletal system provides a rigid framework called the skeleton, supporting and protecting soft organs.</li>
                 <li>It supports the body against gravity, with the lower limb bones supporting the trunk in a standing position.</li>

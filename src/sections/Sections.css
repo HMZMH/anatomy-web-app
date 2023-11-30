@@ -3,8 +3,19 @@
     border-radius: 9px/8px;
 }
 
+ul{
+    list-style: disc;
+}
+
 h3{
     color: darkcyan;
+}
+
+.section-images{
+    margin: 25px;
+    border-radius: 9px/8px;
+    border: solid 1px darkcyan;
+    max-width: 900px;
 }
 
 #quiz-menu{
